@@ -2,5 +2,5 @@
 config BR2_PACKAGE_LDD
 	bool "ldd"
 	help
-	  Includes the misc-moudles and scull components in the kernel image.
+	  Include the misc-moudles and scull components in the kernel image.
 	  Used to understand buildroot external trees and package builds.
