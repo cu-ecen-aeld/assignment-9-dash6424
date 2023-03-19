@@ -5,13 +5,15 @@ case "$1" in
         echo "Starting Modules"
         /usr/bin/module_load faulty
         /usr/bin/scull_load
-        modprobe hello
+        /usr/bin/aesdchar_load
+	modprobe hello
         ;;
     stop)
         echo "Stopping Modules"
         /usr/bin/module_unload
         /usr/bin/scull_unload
-        rmmod hello
+        /usr/bin/aesdchar_unload
+	rmmod hello
         ;;
     *)
         echo "Usage: $0 [start|stop]"

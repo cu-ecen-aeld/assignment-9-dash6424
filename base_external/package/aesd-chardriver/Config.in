@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_AESD_CHARDRIVER
+	bool "aesd-chardriver"
+	help
+	  Circular buffer implementation driver module
